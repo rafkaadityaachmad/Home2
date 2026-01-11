@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Rafka Aditya | Teknologi Jaringan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: #cfd9df;
+        }
+
+        section {
+            padding: 60px 10%;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .experience-detail {
+            display: none;
+            margin-top: 15px;
+            color: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Rafka Aditya</h1>
+    <p>Teknologi Jaringan & Telekomunikasi | Profesional Network Engineer</p>
+</header>
+
+<section>
+    <div class="card">
+        <h3>👤 Profil Saya</h3>
+        <p>Saya adalah seorang pekerja di bidang teknologi jaringan dan telekomunikasi.</p>
+        <div class="experience-detail">
+            <p><strong>Nama:</strong> Rafka Aditya</p>
+            <p><strong>Umur:</strong> 20 Tahun</p>
+            <p><strong>Bidang:</strong> Teknologi Jaringan & Telekomunikasi</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>💼 Pengalaman Kerja</h3>
+        <p>Klik untuk melihat detail pengalaman kerja.</p>
+        <div class="experience-detail">
+            <ul>
+                <li>✔ Guru Bidang Teknologi Jaringan</li>
+                <li>✔ Mengajar dasar jaringan komputer</li>
+                <li>✔ Konfigurasi jaringan LAN & WAN</li>
+                <li>✔ Pembelajaran teknologi & praktik lapangan</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3>🛠 Keahlian</h3>
+        <p>Klik untuk melihat skill.</p>
+        <div class="experience-detail">
+            <ul>
+                <li>🔹 Networking (LAN, WAN)</li>
+                <li>🔹 Mikrotik & Routing</li>
+                <li>🔹 Telekomunikasi Dasar</li>
+                <li>🔹 Troubleshooting Jaringan</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Rafka Aditya | Teknologi Jaringan</p>
+</footer>
+
+<script>
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            const detail = card.querySelector('.experience-detail');
+            detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
